@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #283149;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  position: relative;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title-birthday {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 75%;
+  margin-top: 2rem;
+}
+
+.img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.img-container img {
+  max-height: 400px;
+  width: 100%;
+}
+
+#heart {
+  display: inline-block;
+  transition: 0.3s ease-out;
+  user-select: none;
+}
+
+#heart:hover {
+  transform: scale(1.2);
+}
+
+h1 {
+  font-family: "Lobster Two", cursive;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin: 2rem 0;
+  user-select: none;
+}
+
+img {
+  width: 100%;
+  height: 45rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+img:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-out;
+  user-select: none;
+}
+p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: "delius", cursive;
+  user-select: none;
+  width: 100%;
+}
+
+.message {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  font-size: 1.5rem;
+  color: #dbedf3;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.message img {
+  max-height: 400px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+footer p {
+  font-family: "nunito", sans-serif;
+  font-size: 1.5rem;
+  color: #dbedf3;
+  text-shadow: 5px 0 #232931;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.wishes {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  body {
+    min-height: 100vh;
+    padding-bottom: 70px; /* space for sticky footer */
+  }
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    transform: none;
+  }
+
+  .title-birthday {
+    transform: none;
+  }
+
+  .img-container img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  img {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin: 1rem 0;
+  }
+  p,
+  .message {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  .title-birthday {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+  }
+  footer p {
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .wishes {
+    margin-bottom: 25px;
+    text-align: center;
+    width: 100%;
+  }
+}
